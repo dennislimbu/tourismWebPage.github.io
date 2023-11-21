@@ -1,0 +1,437 @@
+/* PAGE RULES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  max-width: 1780px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.heading_container {
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 10px;
+  height: 100px;
+  width: auto;
+}
+
+.navigation_list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_list {
+  text-decoration: none;
+  padding: 35px;
+  display: block;
+  color: black;
+  font-weight: bold;
+  border-top: 3px solid transparent;
+}
+
+.nav_list:hover {
+  border-top: 3px solid blue;
+  color: blue;
+}
+
+.nav_list:hover .nav_accommodation,
+.nav_activities:hover {
+  color: blue;
+}
+
+/*Search section*/
+
+.search_section {
+  margin: 0 60px 0 60px;
+}
+
+.h1 {
+  display: block;
+  font-weight: bold;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.sub_text,
+.sub_text-1 {
+  width: 400px;
+  margin: 5px 0 5px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/*Search Bar */
+
+.search_bar {
+  max-width: 500px;
+  display: flex;
+  position: relative;
+  border: 2px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  border-radius: 20px;
+}
+
+.location_dot {
+  background: #f2f2f2;
+  padding: 0 30px;
+  border-radius: 20px 0 0 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.search__input {
+  flex-grow: 1;
+  padding: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search_submit {
+  background: blue;
+  padding: 0 30px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-icon {
+  display: none;
+}
+
+.search-text {
+  display: block;
+}
+
+/* Filters*/
+
+.filters {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.filter_title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 40px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 35px;
+  padding-right: 10px;
+  margin: 10px;
+}
+
+.filter__circle {
+  background: #deebff;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.info_circel {
+  border: #f2f2f2 3px solid;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #0065fc;
+  margin-right: 20px;
+}
+
+.filter_text {
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.filter__icon {
+  color: #0065fc;
+}
+
+.filter:hover {
+  background-color: #deebff;
+}
+
+/*Accommodations*/
+.accomadations-grid,
+.popular-grid,
+.accomdation-popular-wrapper,
+.activities-grid {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.accomadations-grid {
+  row-gap: 50px;
+  padding: 20px;
+}
+
+.popular-grid {
+  row-gap: 40px;
+}
+
+.accomadations-grid-box {
+  width: calc(100% / 3 - 40px);
+  margin: 0 20px;
+}
+
+.popular-grid-box {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
+
+.accomdation-popular-wrapper-left {
+  width: calc(70% - 40px);
+  margin: 0 20px;
+
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.accomdation-popular-wrapper-right {
+  width: calc(30% - 40px);
+  margin: 0 20px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+.section_title {
+  margin-left: 30px;
+}
+
+.popular_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-top: 30px;
+}
+
+.accom_img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  padding-bottom: 10px;
+}
+
+.popular_image {
+  object-fit: cover;
+  height: 175px;
+  width: 150px;
+  border-radius: 15px 0 0 15px;
+  overflow: hidden;
+}
+
+.room_text {
+  padding-left: 20px;
+}
+
+.box {
+  flex: 0 0 calc(20% - 5px);
+  padding: 5px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular_box {
+  cursor: pointer;
+  display: flex;
+  background-color: white;
+  padding: 5px;
+  text-align: start;
+  border-radius: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular_info {
+  flex: 2;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box:hover,
+.popular_box:hover,
+.activit_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.activities-grid-box {
+  width: calc(25% - 40px);
+  margin: 0 20px;
+}
+
+.fa-star {
+  color: #0065fc;
+}
+
+.gray {
+  color: gray;
+}
+
+.black {
+  color: black;
+  font-size: 20px;
+}
+
+.show_more {
+  padding-left: 40px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.show_more:hover {
+  color: #0065fc;
+}
+
+/*Activities*/
+
+.activities {
+  padding: 20px 30px;
+}
+
+.activity_headder {
+  padding: 20px;
+}
+.activit_row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.activit_col {
+  width: calc(25% - 20px);
+  margin: 0 10px;
+}
+
+.activit_card {
+  border-radius: 20px;
+}
+
+.card__heading {
+  padding: 20px;
+  margin: 0;
+  background: white;
+  box-shadow: 3px 3px 3px #f2f2f2;
+  border-radius: 0 0 20px 20px;
+}
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+.card__margin {
+  margin-bottom: 20px;
+}
+
+.card__image-small {
+  height: 175px;
+}
+
+.card__image-medium {
+  height: 230px;
+}
+
+.card__image-middle {
+  height: 205px;
+}
+
+/*footer*/
+.footer {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.footer h4 {
+  margin-top: 0;
+  padding-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.footer_container {
+  padding: 40px 0;
+  margin: 0;
+}
+
+.footer_row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer_col {
+  width: calc(100% / 3 - 40px);
+  margin: 0 20px;
+}
+
+.footer_col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_col ul li {
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+
+.footer_col ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer_col ul li a:hover {
+  color: #0065fc;
+  font-weight: bold;
+}

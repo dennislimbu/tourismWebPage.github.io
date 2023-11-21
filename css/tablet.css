@@ -1,0 +1,88 @@
+@media only screen and (min-width: 767px) and (max-width: 922px) {
+  .heading_container {
+    padding: 0 10px;
+  }
+
+  .main_body {
+    padding: 0 20px;
+  }
+
+  .nav_list {
+    padding: 15px;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+
+  /* Adjust search section */
+  .search_section {
+    margin: 0 20px;
+  }
+
+  .search__input {
+    padding: 15px;
+  }
+
+  .search_submit {
+    padding: 0 20px;
+  }
+
+  /* Adjust accommodation section */
+
+  .accomadations-grid,
+  .popular-grid,
+  .accomdation-popular-wrapper,
+  .activities-grid {
+    padding: 0;
+    margin: 0;
+  }
+
+  .popular-grid {
+    row-gap: 20px;
+  }
+
+  .accomadations-grid-box {
+    width: calc(100% / 2 - 40px);
+    margin: 0 20px;
+  }
+
+  .popular-grid-box {
+    width: calc(100% / 1 - 40px);
+    margin: 0 20px;
+  }
+
+  .accomdation-popular-wrapper-left {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 40px;
+  }
+
+  .accomdation-popular-wrapper-right {
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+  }
+
+  .section_title {
+    margin-bottom: 20px;
+  }
+
+  .popular_title {
+    margin-bottom: 10px;
+  }
+
+  .activit_row {
+    row-gap: 10px;
+  }
+  .activit_col {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  /* Adjust footer layout */
+}

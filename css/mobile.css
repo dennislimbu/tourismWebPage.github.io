@@ -1,0 +1,158 @@
+@media (width <= 768px) {
+  .heading_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+  .navigation_list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .nav_list:hover {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid blue;
+    color: blue;
+  }
+
+  .nav_list:hover .nav_accommodation,
+  .nav_activities:hover {
+    color: blue;
+  }
+
+  .nav_list {
+    display: flex;
+    padding: 15px;
+    width: 50%;
+    justify-content: center;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav_accommodation {
+    width: 50%;
+  }
+
+  /* .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  .filter_title {
+    width: 100%;
+  }
+
+  .filter {
+    margin-left: 0;
+  }
+
+  .filter-order {
+    order: -1;
+  }
+
+  /* Adjust search section */
+  .search_section {
+    margin: 0 20px 20px 20px;
+  }
+
+  h1,
+  .sub_text-1,
+  .search,
+  .filters,
+  .filter_title {
+    margin-bottom: 20px;
+  }
+
+  .search__input {
+    padding: 15px;
+    flex-grow: 1;
+  }
+
+  .search_submit {
+    padding: 0 20px;
+    border-radius: 20px;
+  }
+
+  .search-icon {
+    display: block;
+  }
+
+  .search-text {
+    display: none;
+  }
+
+  .search_bar {
+    max-width: 100%;
+  }
+
+  /* Adjust accommodation section */
+
+  .accomdation-popular-wrapper {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .accomadations-grid-box {
+    width: calc(100% - 40px);
+  }
+
+  .accomadations-grid,
+  .popular-grid {
+    padding: 0;
+    margin: 0;
+  }
+
+  .popular-grid-box {
+    width: calc(100% - 40px);
+  }
+
+  .accomdation-popular-wrapper-left {
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .accomdation-popular-wrapper-right {
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .section_title {
+    margin-bottom: 20px;
+  }
+
+  .popular_title {
+    margin-bottom: 20px;
+  }
+
+  .activit_row {
+    row-gap: 10px;
+  }
+  .activit_col {
+    width: calc(100% - 10px);
+  }
+
+  .card__image {
+    height: 200px;
+  }
+
+  .activit_row,
+  .activit_col {
+    gap: 30px;
+  }
+  /* Adjust footer layout */
+
+  .footer_col {
+    width: 100%;
+  }
+}
